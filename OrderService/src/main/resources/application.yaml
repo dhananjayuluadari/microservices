@@ -1,0 +1,25 @@
+server:
+  port: 8081
+spring:
+  application:
+    name: ORDERSERVICE
+  datasource:
+    url: jdbc:postgresql://localhost:5432/allvy_db?schema=microservices
+    driver-class-name: org.postgresql.Driver
+    username: postgres
+    password: postgres
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: none
+#eureka:
+#  client:
+#    fetch-registry: true
+#    register-with-eureka: true
+#    service-url:
+#      defaultzone: http://localhost:8761/eureka
+#  instance:
+#    prefer-ip-address: true
+      
+    
+        
